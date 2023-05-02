@@ -1,7 +1,7 @@
 import './globals.css'
 import { Lato } from 'next/font/google'
 import Nav from './auth/Nav'
-import Home from './page'
+
 
 const lato = Lato({ 
   subsets: ['latin'], 
@@ -14,16 +14,15 @@ export const metadata = {
 }
 
 export default function RootLayout({
-  children
+  children 
 }) {
   return (
     <html lang="en">
       <body 
       className={`mx-4 md:mx-48 xl:mx-96${lato.variable} bg-gray-20`}
       >
-        <Nav>
-          <Home/>
-          {children}</Nav>
+        <Nav/>
+        {children}
         </body>
     </html>
   )

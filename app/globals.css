@@ -15,7 +15,6 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
-body {
-  
+body{
+  background-color: rgba(215, 215, 215, 0.681);
 }
