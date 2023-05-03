@@ -1,5 +1,5 @@
 'use client'
-import AddPost from '../pages/AddPost'
+import AddPost from './auth/components/AddPost'
 
 export default function Home() {
   return (

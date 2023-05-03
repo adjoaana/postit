@@ -36,7 +36,8 @@
     ".next/types/**/*.ts",
     "app/layout.tsx",
     "app/auth/Login.jsx",
-    "app/page.tsx"
+    "app/page.tsx",
+    "prisma/client.ts"
   ],
   "exclude": [
     "node_modules"

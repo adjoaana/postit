@@ -1,6 +1,8 @@
 import './globals.css'
 import { Lato } from 'next/font/google'
 import Nav from './auth/Nav'
+import QueryWrapper from './auth/QueryWrapper'
+
 
 
 const lato = Lato({ 
@@ -19,10 +21,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body 
-      className={`mx-4 md:mx-48 xl:mx-96${lato.variable} bg-gray-20`}
+      className={`mx-4 md:mx-48 xl:mx-96${lato.variable} bg-gray-200`}
       >
+        <QueryWrapper>
         <Nav/>
         {children}
+        </QueryWrapper>
         </body>
     </html>
   )
